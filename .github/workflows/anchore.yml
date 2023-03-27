@@ -27,7 +27,7 @@ jobs:
         output: 'results.sarif'
 
     - name: Upload vulnerability report
-      uses: anchore/inline-scan-action@v2
+      uses: actions/upload-artifact@v3
       with:
         name: trivy-api-artifact
         path: ./results.sarif
