@@ -22,7 +22,7 @@ jobs:
       id: scan
       with:
         image: "localbuild/testimage:latest"
-        severity: 'critical'
+        severity-cutoff: 'critical'
         format: 'sarif' 
         output: 'results.sarif'
 
